@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello World!"
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 sh './gradlew build'
             }
